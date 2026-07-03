@@ -140,4 +140,4 @@ This project demonstrates how simple computational rules applied to biochemical 
 
 ## Author
 
-Biomedical engineering simulation project focused on computational modeling of biological systems and early infection detection using time-series analysis.
+Rabeh Mohamed Mehdi
