@@ -1,0 +1,14 @@
+Time,pH,Status
+0,6.0,Healthy
+4,6.1,Healthy
+8,6.2,Healthy
+12,6.3,Healthy
+16,6.5,Healthy
+20,6.6,Risk
+24,6.8,Risk
+28,7.0,Risk
+32,7.2,Risk
+36,7.4,Infected
+40,7.6,Infected
+44,7.8,Infected
+48,8.0,Infected
