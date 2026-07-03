@@ -1,11 +1,23 @@
+import os
 import pandas as pd
-df = pd.read_csv("../data/pH.csv")
+
+base_dir = os.path.dirname(os.path.dirname(__file__))
+
+data_path = os.path.join(base_dir, "data", "pH.csv")
+output_path = os.path.join(base_dir, "outputs", "labeled_ph_data.csv")
+
+df = pd.read_csv(data_path)
+
 def classify_ph(ph):
-    if ph <= 6.5 :
+    if ph <= 6.5:
         return "Healthy"
-    if ph <= 7.2 :
+    elif ph <= 7.2:
         return "Risk"
-    else :
+    else:
         return "Infected"
+
 df["Status"] = df["pH"].apply(classify_ph)
-df.to_csv("../outputs/labeled_ph_data.csv", index=False)
+
+df.to_csv(output_path, index=False)
+
+print("Model completed.")

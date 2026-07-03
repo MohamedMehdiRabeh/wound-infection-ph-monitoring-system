@@ -1,5 +1,9 @@
 import os
-print("Starting biomedical pipeline...")
+
+print("Starting biomedical pipeline...\n")
+
 os.system("python model.py")
 os.system("python plot.py")
-print("Pipeline completed: results saved in outputs/")
+os.system("python summary.py")
+
+print("\nPipeline completed. Outputs saved.")
